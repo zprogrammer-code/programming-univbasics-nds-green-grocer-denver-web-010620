@@ -64,12 +64,12 @@ end
 def apply_clearance(cart)
   index = 0 
   while index < cart.length do
-    cart_item = find_item_by_name_in_collection(cart[index][:item], cart)
     if cart[index][:clearance]
   cart[index][:price] = (cart[index][:price] - (cart[index][:price] * 0.20)).round(2)
 end
   index += 1
 end
+cart
 end
 
 def checkout(cart, coupons)
