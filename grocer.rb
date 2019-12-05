@@ -66,9 +66,8 @@ def apply_clearance(cart)
   new_cart = []
   while index < cart.length do
     cart_item = find_item_by_name_in_collection(cart[index][:item], cart)
-    
-if cart[index][:clearance] == true 
-  cart[index][:price]/5*4
+    if cart[index][:clearance] == true 
+  cart[index][:price] -= cart[index][:price]*.02
 end
 end
 
