@@ -69,6 +69,8 @@ def apply_clearance(cart)
     if cart[index][:clearance] == true 
   cart[index][:price] -= cart[index][:price]*.02
 end
+  index += 1
+end
 end
 
 def checkout(cart, coupons)
