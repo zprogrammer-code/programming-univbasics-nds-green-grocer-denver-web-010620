@@ -62,8 +62,14 @@ cart
 end
 
 def apply_clearance(cart)
+  index = 0 
+  new_cart = []
+  while index < cart.length do
+    cart_item = find_item_by_name_in_collection(cart[index][:item], cart)
+    
 if cart[index][:clearance] == true 
   cart[index][:price]/5*4
+end
 end
 
 def checkout(cart, coupons)
