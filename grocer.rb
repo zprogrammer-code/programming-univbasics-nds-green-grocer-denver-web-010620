@@ -73,8 +73,7 @@ cart
 end
 
 def checkout(cart, coupons)
-  # Consult README for inputs and outputs
-  #
+  con
   # This method should call
   # * consolidate_cart
   # * apply_coupons
