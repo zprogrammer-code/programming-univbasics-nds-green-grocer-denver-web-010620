@@ -62,9 +62,8 @@ cart
 end
 
 def apply_clearance(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+if cart[index][:clearance] == true 
+  cart[index][:price]/5*4
 end
 
 def checkout(cart, coupons)
